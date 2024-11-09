@@ -9,7 +9,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: indigo;
     --foreground: #ededed;
   }
 }
@@ -17,5 +17,31 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: monospace;
+  font-size: medium;
+  background-color: #171717;
+}
+
+.weightNone {
+  flex-grow: var(--weight-none);
+}
+
+.weightSmaller {
+  flex-grow: var(--weight-smaller);
+}
+
+.weightSmall {
+  flex-grow: var(--weight-small);
+}
+
+.weightMedium {
+  flex-grow: var(--weight-medium);
+}
+
+.weightLarge {
+  flex-grow: var(--weight-large);
+}
+
+.weightLarger {
+  flex-grow: var(--weight-larger);
 }
