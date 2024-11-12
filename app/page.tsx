@@ -11,6 +11,7 @@ export default function Home() {
     setInput(e.target.value);
   };
 
+  //click here button to take you 
   function handleEnter(event: KeyboardEvent<HTMLInputElement>){
     if (event.key==="Enter"){
       const output = handleCommand(input);
@@ -27,7 +28,7 @@ export default function Home() {
       switch (command){
         
         case "whoami":
-          return "root";
+          return "Moaaz Ahmad - software developer with a passion for cybersecurity";
         
         case "help":
             return "commands: help whoami neofetch clear (hint: use neofetch)"; 
@@ -68,7 +69,7 @@ export default function Home() {
        <p className="weightSmall pr-2"> {"$"} </p> 
        <input ref={inputRef} value={input} onChange={handleInputChange} onKeyDown={handleEnter} autoFocus maxLength={30} type="text" className="bg-[#1E1E2E] text-[#C691A3] outline-none weightLarger"/>
       </div>
-      
+
       </div>
     </div>
   );
